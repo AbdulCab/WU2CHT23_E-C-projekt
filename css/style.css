@@ -8,5 +8,17 @@
     
     #grid_wrapper{
         height:100vh;
-    
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr minmax(100px, 1fr);
+        grid-template-areas: 
+        "hea hea hea hea"
+        "nav nav nav nav"
+        "se1 se2 se3 se4"
+        "se1 se2 se3 se4"
+        "se5 se6 se7 se8"
+        "se5 se6 se7 se8"
+        "se5 se6 se7 se8"
+        "foo foo foo foo"
+        ;
     }
