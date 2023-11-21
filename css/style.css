@@ -6,14 +6,13 @@
     }
     
     
-    #grid_wrapper{
+    .flex_wrapper{
         height:100vh;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr minmax(100px, 1fr);
+        grid-template-rows: 1fr 1.5fr 1fr 1fr 1fr 1fr minmax(50px, 0.5fr);
         grid-template-areas: 
         "hea hea hea hea"
-        "nav nav nav nav"
         "se1 se2 se3 se4"
         "se1 se2 se3 se4"
         "se5 se6 se7 se8"
@@ -22,3 +21,99 @@
         "foo foo foo foo"
         ;
     }
+
+
+
+    header{     
+        grid-area: hea;  
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        background-color: antiquewhite;
+
+    }
+
+    #logo{
+        height: 200px;
+        width: auto;
+        overflow: hidden;
+    }
+
+
+    #head{
+        background-color: antiquewhite;
+        color: black;
+        text-decoration: none;
+        font-size: 50px;
+        font-style: italic;
+
+    }
+
+    section{
+        margin: 10px;
+
+    }
+
+    #section_1{
+        display:flex;        
+        grid-area: se1;
+        padding-top: 10px;
+        padding-left: 10px;
+
+    }
+
+    #info{
+        display: none;
+        color: white;
+        font-size: 30px;
+        font-style: italic;
+    }
+
+
+    #section_1:hover ~ #info {
+        display: block;
+        position: relative;
+        right: 575px;
+        top: 400px;
+        text-align: center;
+        justify-content: center;
+        background-color: transparent;
+    }
+
+    #art_nature{
+        width: 100%;
+        height: auto;
+        border-radius: 25px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer{
+grid-area: foo;
+display: flex;
+justify-content: center;
+align-items: center;
+background-color: blueviolet;
+
+}
+
+#copy{
+    background-color: blueviolet;
+    
+
+}
