@@ -15,8 +15,8 @@
         "hea hea hea"
         "se1 se2 se3"
         "se1 se2 se3"
-        "se5 se6 se7"
-        "se5 se6 se7"
+        "se4 se5 se6"
+        "se4 se5 se6"
         "foo foo foo"
         ;
     }
@@ -53,7 +53,7 @@
 
     }
 
-    #section_1{  
+    #section_1_index{  
         display: flex;     
         grid-area: se1;
         position: relative;
@@ -62,15 +62,20 @@
 
     }
     
-    #info{
+    .info{
         display: none;
-        color: white;
-        font-size: 26px;
         font-style: italic;
         background-color: transparent;
-        
+        text-decoration: none;
+        text-transform: capitalize;
     }
-    #section_1:hover  #info {
+
+    #person_1_konst{
+        font-size: 27px;
+        color: antiquewhite;
+    }
+
+    #section_1_index:hover  .info {
         display: block;
         position: absolute; 
         text-align: center;
@@ -85,6 +90,39 @@
         border-radius: 20px;
     }
 
+    #person_4_konst{
+        font-size: 32px;
+        color: black;
+
+    }
+
+    #section_4_index{
+        display: flex;
+        grid-row-start: se3;
+        grid-column-start: se3;
+        grid-row-end: se6;
+        grid-column-end: se6;
+        position: relative;
+        margin-top: 20px;
+        margin-right: 20px;
+        margin-bottom: 20px;
+    }
+    
+    #section_4_index:hover  .info {
+        display: block;
+        position: absolute; 
+        text-align: center;
+        justify-content: center;
+        bottom:0;
+        right: 8px;
+    }
+
+    #vattenfall{
+        width: 100%;
+        height: auto;
+        border-radius: 20px;
+
+    }
 
 
 
@@ -102,17 +140,18 @@
 
 
 
-footer{
-grid-area: foo;
-display: flex;
-justify-content: center;
-align-items: center;
-background-color: blueviolet;
+
+
+
+footer {
+    grid-area: foo;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: blueviolet;
 
 }
-
-#copy{
+#copy {
     background-color: blueviolet;
-    
-
+    font-style: italic;
 }
