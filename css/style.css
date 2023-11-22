@@ -52,6 +52,7 @@
         margin: 10px;
 
     }
+    
 
     #section_1_index{  
         display: flex;     
@@ -122,6 +123,10 @@
         height: auto;
         border-radius: 20px;
 
+    }
+
+    a:hover{
+        color: red;
     }
 
 
