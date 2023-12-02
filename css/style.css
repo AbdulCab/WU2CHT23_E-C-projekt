@@ -5,12 +5,11 @@
     box-sizing: border-box;
     }
     
-    
     .flex_wrapper{
         height:100vh;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1.5fr 1fr 1fr 1fr minmax(50px, 0.5fr);
+        grid-template-rows: 1fr 1.5fr 1fr 1fr 1fr minmax(40px, 0.3fr);
         grid-template-areas: 
         "hea hea hea"
         "se1 se2 se3"
@@ -21,7 +20,7 @@
         ;
     }
 
-
+    /* *, flex_wrapper, header, section och footer är gemensamma i varenda HTML-fil. */
 
     header{     
         grid-area: hea;  
@@ -54,6 +53,21 @@
     }
     
 
+    footer {
+        grid-area: foo;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #d4c87f;
+    
+    }
+    #copy {
+        background: transparent;
+        font-style: italic;
+    }
+    
+      /* Denna del av css filen är till för index.html */
+    
     #section_1_index{  
         display: flex;     
         grid-area: se1;
@@ -85,19 +99,35 @@
         right: 8px;
     }
 
-    #art_nature{
-        width: 100%;
-        height: auto;
-        border-radius: 20px;
+
+    #section_2_index{  
+        display: flex;     
+        grid-area: se2;
+        position: relative;
+        margin-top: 20px;
+
     }
 
-    #person_4_konst{
+    #section_2_index:hover  .info {
+        display: block;
+        position: absolute; 
+        text-align: center;
+        justify-content: center;
+        bottom:0;
+        right: 8px;
+    }
+
+    #person_2_konst{
+        font-size: 27px;
+        color: antiquewhite;
+    }
+
+    #person_3_konst{
         font-size: 32px;
         color: black;
-
     }
 
-    #section_4_index{
+    #section_3_6_index{
         display: flex;
         grid-row-start: se3;
         grid-column-start: se3;
@@ -109,7 +139,7 @@
         margin-bottom: 20px;
     }
     
-    #section_4_index:hover  .info {
+    #section_3_6_index:hover  .info {
         display: block;
         position: absolute; 
         text-align: center;
@@ -118,45 +148,78 @@
         right: 8px;
     }
 
-    #vattenfall{
+    #person_4_konst{
+        font-size: 50px;
+        color: black;
+    }
+
+    #section_4_5_index{
+        display: flex;
+        grid-row-start: se4;
+        grid-column-start: se4;
+        grid-row-end: se5;
+        grid-column-end: se5;
+        position: relative;
+        margin-left: 20px;
+        margin-bottom: 20px;
+    }
+    
+    #section_4_5_index:hover  .info {
+        display: block;
+        position: absolute; 
+        text-align: center;
+        justify-content: center;
+        bottom:0;
+        right: 8px;
+    }
+
+    .konst{
+        border-radius: 20px;
         width: 100%;
         height: auto;
-        border-radius: 20px;
 
     }
 
-    a:hover{
-        color: red;
-    }
+/* Här slutar koden för index.html*/
 
+/* card.html start*/
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-footer {
-    grid-area: foo;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: blueviolet;
+#person_1_card{
+    grid-area: se1;
+    background: yellow;
 
 }
-#copy {
-    background-color: blueviolet;
-    font-style: italic;
+
+#person_2_card{
+    grid-area: se2;
+    background: red;
+
 }
+
+#person_3_card{
+    grid-area: se3;
+    background: beige;
+
+}
+
+#person_4_card{
+    grid-area: se5;
+    background: black;
+
+}
+
+.person_card{
+    border-radius: 20px;
+    padding: 100px;
+
+    
+
+}
+
+
+
+
+
+
+
+
