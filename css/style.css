@@ -9,7 +9,7 @@
         height:100vh;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1.5fr 1fr 1fr 1fr minmax(40px, 0.3fr);
+        grid-template-rows: 1fr 1.25fr 1fr 1fr 1fr minmax(40px, 0.3fr);
         grid-template-areas: 
         "hea hea hea"
         "se1 se2 se3"
@@ -32,7 +32,7 @@
     }
 
     #logo{
-        height: 200px;
+        height: 150px;
         width: auto;
 
     }
@@ -217,8 +217,8 @@
     display: block;
     position: absolute;
     background: transparent;
-    bottom: 1%;
-    left: 1%;
+    bottom: 0;
+    left: 2%;
     font-size: 1vw;
     grid-area: sc2;
     cursor: default;
@@ -243,8 +243,8 @@
     display: block;
     position: absolute;
     background: transparent;
-    bottom: 1%;
-    left: 1%;
+    bottom: 0;
+    left: 5%;
     font-size: 1vw;
     grid-area: sc2;
     cursor:default;
