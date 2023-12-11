@@ -68,7 +68,7 @@
     
       /* Denna del av css filen är till för index.html */
     
-    #section_1_index{  
+    #section_1_konst{  
         display: flex;     
         grid-area: se1;
         position: relative;
@@ -90,7 +90,7 @@
         color: antiquewhite;
     }
 
-    #section_1_index:hover  .info {
+    #section_1_konst:hover  .info {
         display: block;
         position: absolute; 
         text-align: center;
@@ -100,7 +100,7 @@
     }
 
 
-    #section_2_index{  
+    #section_2_konst{  
         display: flex;     
         grid-area: se2;
         position: relative;
@@ -108,7 +108,7 @@
 
     }
 
-    #section_2_index:hover  .info {
+    #section_2_konst:hover  .info {
         display: block;
         position: absolute; 
         text-align: center;
@@ -127,7 +127,7 @@
         color: black;
     }
 
-    #section_3_6_index{
+    #section_3_6_konst{
         display: flex;
         grid-row-start: se3;
         grid-column-start: se3;
@@ -139,7 +139,7 @@
         margin-bottom: 20px;
     }
     
-    #section_3_6_index:hover  .info {
+    #section_3_6_konst:hover  .info {
         display: block;
         position: absolute; 
         text-align: center;
@@ -153,7 +153,7 @@
         color: antiquewhite;
     }
 
-    #section_4_5_index{
+    #section_4_5_konst{
         display: flex;
         grid-row-start: se4;
         grid-column-start: se4;
@@ -164,7 +164,7 @@
         margin-bottom: 20px;
     }
     
-    #section_4_5_index:hover  .info {
+    #section_4_5_konst:hover  .info {
         display: block;
         position: absolute; 
         text-align: center;
@@ -275,7 +275,7 @@
     height:100vh;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 100px 200px 1fr minmax(40px, 80px);
+    grid-template-rows: 125px 225px 1fr minmax(40px, 80px);
     grid-template-areas: 
     "hea hea"
     "dip dip"
@@ -288,10 +288,15 @@
     display: flex;     
     grid-area: dip;
     position: relative;
-    background-image: url("");
+    overflow: hidden;
     background-color: #FF5733;
+    margin: 0;
 }
 
+#bird{
+    width: 100%;
+
+}
 
 
 
