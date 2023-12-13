@@ -6,12 +6,13 @@
     }
     
     .flex_wrapper{
-        height:110vh;
+        height:125vh;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 125px 1fr 1fr 1fr 1fr minmax(40px, 0.3fr);
+        grid-template-rows: 125px 80px 1fr 1fr 1fr 1fr minmax(40px, 0.3fr);
         grid-template-areas: 
         "hea hea hea"
+        "ing ing ing"
         "se1 se2 se3"
         "se1 se2 se3"
         "se4 se5 se6"
@@ -26,9 +27,17 @@
         grid-area: hea;  
         display: flex;
         align-items: center;
-        justify-content: space-evenly;
+        justify-content: space-around;
         background-color: #f9f4d7;
         width: auto;
+    }
+
+    #rat {
+        width: 250px;
+        grid-area: hea;
+        margin: -200px;
+        background-color: transparent;
+
     }
 
     #logo{
@@ -66,7 +75,24 @@
         font-style: italic;
     }
     
-      /* Denna del av css filen är till för index.html */
+      /* Denna del av css filen är till för konst.html */
+
+      #inled{
+        display: flex;
+        grid-area: ing;
+        justify-content: center;
+        align-items: center;
+        background-color: #dedb96;
+        box-shadow: 0px 0px 2.5px 5px;
+        
+      }
+
+      .intro{
+        font-size: 58px;
+        font-style: italic;
+        background-color: transparent;
+
+      }
     
     #section_1_konst{  
         display: flex;     
@@ -180,16 +206,17 @@
 
     }
 
-/* Här slutar koden för index.html*/
+/* Här slutar koden för konst.html*/
 
 /* card.html start*/
 .card_wrapper{
-    height:100vh;
+    height:125vh;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 125px 1fr 1fr 1fr 1fr minmax(40px, 0.3fr);
+    grid-template-rows: 125px 100px 1fr 1fr 1fr 1fr minmax(40px, 0.3fr);
     grid-template-areas: 
     "hea hea hea hea"
+    "ind ind ind ind"
     "sc1 sc2 sc3 sc4"
     "sc1 sc2 sc3 sc4"
     "sc5 sc6 sc7 sc8"
@@ -205,6 +232,16 @@
     border-radius: 20px;
 
 }
+
+#inled_card{
+    display: flex;
+    grid-area: ind;
+    justify-content: center;
+    align-items: center;
+    background-color: #6b6a5d;
+    box-shadow: 0px 0px 2.5px 5px;
+    
+  }
 
 #seller_1{
     position: absolute;
@@ -269,10 +306,10 @@
 }
 
 
-/* Start på hem.html*/
+/* Start på index.html*/
 
 .home_wrapper{
-    height:100vh;
+    height:125vh;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 125px 225px 1fr minmax(40px, 80px);
@@ -291,11 +328,13 @@
     overflow: hidden;
     background-color: #FF5733;
     margin: 0;
+    height: 80%;
+    box-shadow: 0px 10px 8px 5px;
+    
 }
 
 #bird{
     width: 100%;
-
 }
 
 
