@@ -57,7 +57,7 @@
         background-color: #f9f4d7;
         color: black;
         text-decoration: none;
-        font-size: 50px;
+        font-size: 3.125rem;
         font-style: italic;
 
     }
@@ -218,7 +218,7 @@
     height:115vh;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 125px 100px 1fr 1fr minmax(40px, 80px);
+    grid-template-rows: 125px 100px auto auto minmax(40px, 80px);
     grid-template-areas: 
     "hea hea hea hea"
     "ind ind ind ind"
@@ -243,6 +243,7 @@
     background: gray;
     position: relative;
     border-radius: 20px;
+    
 
 }
 
