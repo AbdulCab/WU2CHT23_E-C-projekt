@@ -7,11 +7,15 @@
     box-sizing: border-box;
     }
     
+    h2{
+        background-color: transparent;
+    }
+
     .flex_wrapper{
         height:125vh;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 125px 80px 1fr 1fr 1fr 1fr minmax(40px, 0.3fr);
+        grid-template-rows: 125px 100px 1fr 1fr 1fr 1fr minmax(40px, 60px);
         grid-template-areas: 
         "hea hea hea"
         "ing ing ing"
@@ -85,12 +89,12 @@
         justify-content: center;
         align-items: center;
         background-color: #dedb96;
-        box-shadow: 0px 0px 2.5px 5px;
+        box-shadow: 0px 0px 6px 7.5px;
         
       }
 
       .intro{
-        font-size: 58px;
+        font-size: 3.625rem;
         font-style: italic;
         background-color: transparent;
 
@@ -211,10 +215,10 @@
 
 /* card.html start*/
 .card_wrapper{
-    height:125vh;
+    height:115vh;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 125px 100px 350px 350px minmax(60px, 1fr);
+    grid-template-rows: 125px 100px 1fr 1fr minmax(40px, 80px);
     grid-template-areas: 
     "hea hea hea hea"
     "ind ind ind ind"
@@ -222,14 +226,6 @@
     "sc5 sc6 sc7 sc8"
     "foo foo foo foo"
     ;
-}
-
-.sec1_card{
-    grid-area: sc2;
-    background: gray;
-    position: relative;
-    border-radius: 20px;
-
 }
 
 #inled_card{
@@ -242,6 +238,14 @@
     
   }
 
+.sec1_card{
+    grid-area: sc2;
+    background: gray;
+    position: relative;
+    border-radius: 20px;
+
+}
+
 #person_1{
     position: absolute;
     width: 100%;
@@ -253,8 +257,8 @@
     display: block;
     position: absolute;
     background: transparent;
-    bottom: 0;
-    left: 2%;
+    bottom: 10px;
+    left: 10px;
     font-size: 1vw;
     grid-area: sc2;
     cursor: default;
@@ -281,7 +285,7 @@
     position: absolute;
     background: transparent;
     bottom: 0;
-    left: 5%;
+    left: 10px;
     font-size: 1vw;
     grid-area: sc3;
     cursor:default;
@@ -308,7 +312,7 @@
     position: absolute;
     background: transparent;
     bottom: 0;
-    left: 5%;
+    left: 10px;
     font-size: 1vw;
     grid-area: sc6;
     cursor:default;
@@ -335,7 +339,7 @@
     position: absolute;
     background: transparent;
     bottom: 0;
-    left: 5%;
+    left: 10px;
     font-size: 1vw;
     grid-area: sc7;
     cursor:default;
@@ -354,10 +358,10 @@
 /* Start på index.html*/
 
 .home_wrapper{
-    height:125vh;
+    height:115vh;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 125px 225px 1fr minmax(40px, 80px);
+    grid-template-rows: 125px 0.45fr 1fr minmax(40px, 0.1fr);
     grid-template-areas: 
     "hea hea"
     "dip dip"
@@ -372,10 +376,11 @@
     position: relative;
     overflow: hidden;
     background-color: #FF5733;
-    margin: 0;
+    margin: 10px;
+    border-style: solid;
+    border-width: 0.75rem;
     height: 80%;
     box-shadow: 0px 10px 8px 5px;
-    
 }
 
 #bird{
@@ -392,15 +397,15 @@
     border-width: 10px;
     margin: -1.5rem  10px 10px 1rem;
     background-color: #d0a63d;
-
 }
 
 .child_div{
     position: absolute;
     top: 10px;
-    font-size: 28px;
     background-color: transparent;
     font-family: 'Lobster Two', sans-serif;
+    width: 100%;
+    height: max-content;
 }
 
 #rubrik{
@@ -408,7 +413,7 @@
     position: absolute;
 }
 
-#under_rub{
+.under_rub{
     position: absolute;
     background-color: transparent;
 }
