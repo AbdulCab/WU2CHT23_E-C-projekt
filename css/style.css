@@ -15,7 +15,7 @@
         height:125vh;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 125px 100px 1fr 1fr 1fr 1fr minmax(40px, 60px);
+        grid-template-rows: 125px 100px 1fr 1fr 1fr 1fr minmax(30px, 60px);
         grid-template-areas: 
         "hea hea hea"
         "ing ing ing"
@@ -218,7 +218,7 @@
     height:115vh;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 125px 100px auto auto minmax(40px, 80px);
+    grid-template-rows: 125px 100px auto auto minmax(30px, 60px);
     grid-template-areas: 
     "hea hea hea hea"
     "ind ind ind ind"
@@ -233,14 +233,14 @@
     grid-area: ind;
     justify-content: center;
     align-items: center;
-    background-color: #6b6a5d;
+    background-color: #e8eab5;
     box-shadow: 0px 0px 2.5px 5px;
     
   }
 
 .sec1_card{
     grid-area: sc2;
-    background: gray;
+    background: rgb(172, 160, 160);
     position: relative;
     border-radius: 20px;
     
@@ -258,7 +258,7 @@
     display: block;
     position: absolute;
     background: transparent;
-    bottom: 10px;
+    bottom: 0;
     left: 10px;
     font-size: 1vw;
     grid-area: sc2;
@@ -267,7 +267,7 @@
 
 .sec2_card{
     grid-area: sc3;
-    background: rgb(189, 112, 112);
+    background: rgb(240, 171, 110);
     position: relative;
     border-radius: 20px;
 
@@ -295,7 +295,7 @@
 
 .sec3_card{
     grid-area: sc6;
-    background: beige;
+    background: rgb(213, 246, 186);
     position: relative;
     border-radius: 20px;
 }
@@ -322,7 +322,7 @@
 
 .sec4_card{
     grid-area: sc7;
-    background: teal;
+    background: rgb(94, 185, 185);
     position: relative;
     border-radius: 20px;
 }
@@ -362,7 +362,7 @@
     height:115vh;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 125px 0.45fr 1fr minmax(40px, 0.1fr);
+    grid-template-rows: 125px 0.45fr 1fr minmax(30px, 60px);
     grid-template-areas: 
     "hea hea"
     "dip dip"
@@ -393,20 +393,20 @@
     grid-area: sp1;
     background-color: transparent;
     position: relative;
-    padding: 40px;
+    padding: 5px;
     border-style: double;
     border-width: 10px;
     margin: -1.5rem  10px 10px 1rem;
     background-color: #d0a63d;
+    overflow: scroll;
+    
 }
 
 .child_div{
     position: absolute;
-    top: 10px;
+    top: 0;
     background-color: transparent;
     font-family: 'Lobster Two', sans-serif;
-    width: 100%;
-    height: max-content;
 }
 
 #rubrik{
@@ -417,6 +417,10 @@
 .under_rub{
     position: absolute;
     background-color: transparent;
+}
+
+.om_oss{
+    font-size: 1.5rem;
 }
 
 
