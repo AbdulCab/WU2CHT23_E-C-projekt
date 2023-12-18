@@ -89,7 +89,7 @@
         justify-content: center;
         align-items: center;
         background-color: #dedb96;
-        box-shadow: 0px 0px 6px 7.5px;
+        box-shadow: 0 0 6px 7.5px;
         
       }
 
@@ -214,217 +214,207 @@
 /* Här slutar koden för konst.html*/
 
 /* card.html start*/
-.card_wrapper{
-    height:115vh;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 125px 100px auto auto minmax(30px, 60px);
-    grid-template-areas: 
-    "hea hea hea hea"
-    "ind ind ind ind"
-    "sc1 sc2 sc3 sc4"
-    "sc5 sc6 sc7 sc8"
-    "foo foo foo foo"
-    ;
-}
+    .card_wrapper{
+        height:115vh;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 125px 100px auto auto minmax(30px, 60px);
+        grid-template-areas: 
+        "hea hea hea hea"
+        "ind ind ind ind"
+        "sc1 sc2 sc3 sc4"
+        "sc5 sc6 sc7 sc8"
+        "foo foo foo foo"
+        ;
+    }
 
-#inled_card{
-    display: flex;
-    grid-area: ind;
-    justify-content: center;
-    align-items: center;
-    background-color: #e8eab5;
-    box-shadow: 0px 0px 2.5px 5px;
-    
-  }
+    #inled_card{
+        display: flex;
+        grid-area: ind;
+        justify-content: center;
+        align-items: center;
+        background-color: #e8eab5;
+        box-shadow: 0 0 2.5px 5px;
+        
+    }
 
-.sec1_card{
-    grid-area: sc2;
-    background: rgb(172, 160, 160);
-    position: relative;
-    border-radius: 20px;
-    
+    .person_info{
+        font-size: 1vw;
+    }
 
-}
+    .sec1_card{
+        grid-area: sc2;
+        background: rgb(172, 160, 160);
+        position: relative;
+        border-radius: 20px;
+        
 
-#person_1{
-    position: absolute;
-    width: 100%;
-    height: 80%;
-    border-radius: 20px; 
-}
+    }
 
-#person_1_info{
-    display: block;
-    position: absolute;
-    background: transparent;
-    bottom: 0;
-    left: 10px;
-    font-size: 1vw;
-    grid-area: sc2;
-    cursor: default;
-}
+    #person_1{
+        position: absolute;
+        width: 100%;
+        height: 80%;
+        border-radius: 20px; 
+    }
 
-.sec2_card{
-    grid-area: sc3;
-    background: rgb(240, 171, 110);
-    position: relative;
-    border-radius: 20px;
+    #person_1_info{
+        display: block;
+        position: absolute;
+        background: transparent;
+        bottom: 0;
+        left: 10px;
+        grid-area: sc2;
+        cursor: default;
+    }
 
-}
+    .sec2_card{
+        grid-area: sc3;
+        background: rgb(240, 171, 110);
+        position: relative;
+        border-radius: 20px;
+    }
 
-#person_2{
-    grid-area: sc3;
-    position: absolute;
-    width: 100%;
-    height: 80%;
-    border-radius: 20px; 
-}
+    #person_2{
+        grid-area: sc3;
+        position: absolute;
+        width: 100%;
+        height: 80%;
+        border-radius: 20px; 
+    }
 
-#person_2_info{
-    display: block;
-    position: absolute;
-    background: transparent;
-    bottom: 0;
-    left: 10px;
-    font-size: 1vw;
-    grid-area: sc3;
-    cursor:default;
-    
-}
+    #person_2_info{
+        display: block;
+        position: absolute;
+        background: transparent;
+        bottom: 0;
+        left: 10px;
+        grid-area: sc3;
+        cursor:default;
+    }
 
-.sec3_card{
-    grid-area: sc6;
-    background: rgb(213, 246, 186);
-    position: relative;
-    border-radius: 20px;
-}
+    .sec3_card{
+        grid-area: sc6;
+        background: rgb(213, 246, 186);
+        position: relative;
+        border-radius: 20px;
+    }
 
-#person_3{
-    grid-area: sc6;
-    position: absolute;
-    width: 100%;
-    height: 80%;
-    border-radius: 20px; 
-}
+    #person_3{
+        grid-area: sc6;
+        position: absolute;
+        width: 100%;
+        height: 80%;
+        border-radius: 20px; 
+    }
 
-#person_3_info{
-    display: block;
-    position: absolute;
-    background: transparent;
-    bottom: 0;
-    left: 10px;
-    font-size: 1vw;
-    grid-area: sc6;
-    cursor:default;
-    
-}
+    #person_3_info{
+        display: block;
+        position: absolute;
+        background: transparent;
+        bottom: 0;
+        left: 10px;
+        grid-area: sc6;
+        cursor:default;
+        
+    }
 
-.sec4_card{
-    grid-area: sc7;
-    background: rgb(94, 185, 185);
-    position: relative;
-    border-radius: 20px;
-}
+    .sec4_card{
+        grid-area: sc7;
+        background: rgb(94, 185, 185);
+        position: relative;
+        border-radius: 20px;
+    }
 
-#person_4{
-    grid-area: sc7;
-    position: absolute;
-    width: 100%;
-    height: 80%;
-    border-radius: 20px; 
-}
+    #person_4{
+        grid-area: sc7;
+        position: absolute;
+        width: 100%;
+        height: 80%;
+        border-radius: 20px; 
+    }
 
-#person_4_info{
-    display: block;
-    position: absolute;
-    background: transparent;
-    bottom: 0;
-    left: 10px;
-    font-size: 1vw;
-    grid-area: sc7;
-    cursor:default;
-    
-}
+    #person_4_info{
+        display: block;
+        position: absolute;
+        background: transparent;
+        bottom: 0;
+        left: 10px;
+        grid-area: sc7;
+        cursor:default;
+    }
 
-.person_card{
-    border-radius: 20px;
-}
+    .person_card{
+        border-radius: 20px;
+    }
 
-.kontakt{
-    border-radius: 20px;
-}
+    .kontakt{
+        border-radius: 20px;
+    }
 
 
-/* Start på index.html*/
+    /* Start på index.html*/
 
-.home_wrapper{
-    height:115vh;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 125px 0.45fr 1fr minmax(30px, 60px);
-    grid-template-areas: 
-    "hea hea"
-    "dip dip"
-    "sp1 sp1"
-    "foo foo"
-    ;
-}
+    .home_wrapper{
+        height:115vh;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 125px 0.45fr 1fr minmax(30px, 60px);
+        grid-template-areas: 
+        "hea hea"
+        "dip dip"
+        "sp1 sp1"
+        "foo foo"
+        ;
+    }
 
-#section_1_hem{  
-    display: flex;     
-    grid-area: dip;
-    position: relative;
-    overflow: hidden;
-    background-color: #FF5733;
-    margin: 10px;
-    border-style: solid;
-    border-width: 0.75rem;
-    height: 80%;
-    box-shadow: 0px 10px 8px 5px;
-}
+    #section_1_hem{  
+        display: flex;     
+        grid-area: dip;
+        position: relative;
+        overflow: hidden;
+        background-color: #FF5733;
+        margin: 10px;
+        border-style: solid;
+        border-width: 0.75rem;
+        height: 80%;
+        box-shadow: 0 10px 8px 5px;
+    }
 
-#bird{
-    width: 100%;
-}
+    #bird{
+        width: 100%;
+    }
 
-.parent_div{
-    display: flex;
-    grid-area: sp1;
-    background-color: transparent;
-    position: relative;
-    padding: 5px;
-    border-style: double;
-    border-width: 10px;
-    margin: -1.5rem  10px 10px 1rem;
-    background-color: #d0a63d;
-    overflow: scroll;
-    
-}
+    .parent_div{
+        display: flex;
+        grid-area: sp1;
+        background-color: transparent;
+        position: relative;
+        padding: 5px;
+        border-style: double;
+        border-width: 10px;
+        margin: -1.5rem  10px 10px 1rem;
+        background-color: #d0a63d;
+        overflow: scroll;    
+    }
 
-.child_div{
-    position: absolute;
-    top: 0;
-    background-color: transparent;
-    font-family: 'Lobster Two', sans-serif;
-}
+    .child_div{
+        position: absolute;
+        top: 0;
+        background-color: transparent;
+        font-family: 'Lobster Two', sans-serif;
+    }
 
-#rubrik{
-    background-color: transparent;
-    position: absolute;
-}
+    #rubrik{
+        background-color: transparent;
+        position: absolute;
+    }
 
-.under_rub{
-    position: absolute;
-    background-color: transparent;
-}
+    .under_rub{
+        position: absolute;
+        background-color: transparent;
+    }
 
-.om_oss{
-    font-size: 1.5rem;
-}
-
-
-
-
-
-
+    .om_oss{
+        font-size: 1.5rem;
+    }
