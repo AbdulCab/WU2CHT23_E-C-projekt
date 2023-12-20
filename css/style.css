@@ -62,14 +62,10 @@
 
     }
 
-    span{
-        margin: 10px;
-
-    }
-
     section{
         margin: 10px;
     }
+
     
 
     footer {
@@ -123,7 +119,7 @@
 
     #person_1_konst{
         font-size: 2vw;
-        color: antiquewhite;
+        color: rgb(141, 136, 136);
     }
 
     #section_1_konst:hover  .info {
@@ -155,12 +151,12 @@
 
     #person_2_konst{
         font-size: 2vw;
-        color: antiquewhite;
+        color: rgb(141, 136, 136);
     }
 
     #person_3_konst{
         font-size: 2vw;
-        color: black;
+        color: rgb(70, 68, 68);
     }
 
     #section_3_6_konst{
@@ -186,7 +182,7 @@
 
     #person_4_konst{
         font-size: 2vw;
-        color: antiquewhite;
+        color: rgb(230, 225, 225);
     }
 
     #section_4_5_konst{
